@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon" />
+
+  <!--=============== REMIXICON ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <title>Technova</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../components/Home.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="../components/About.html" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="../components/Modules.html" class="nav__link">Modules</a>
+          </li>
+          <li class="nav__item">
+            <a href="../components/Register.html" class="nav__link">Register</a>
+          </li>
+          <li class="nav__item">
+            <a href="../components/Sponsors.html" class="nav__link">Sponsor</a>
+          </li>
+          <a href="#" class="nav__logo">
+            <img src="../assets/img/logo.jpg" alt="logo" />
+          </a>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+
+ <section class="section">
+    <div class="container">
+      <h2 class="section__title-border">COMPETITION MODULE</h2>
+      <div class="about__container">
+        <img src="assets/img/logo.jpg" alt="Design Image" class="about__img" />
+
+        <h3 class="about__title">Web & Logo Designing Competition</h3>
+
+        <p class="about__description">
+          Dive into a world of creativity where design meets innovation! The <strong>Web & Logo Designing Competition</strong> invites all designers, developers, and visual artists to bring their bold ideas to life.
+        </p>
+
+        <p class="about__description">
+          <strong>💻 Web Designing:</strong> Participants will create visually stunning and responsive websites with excellent UI/UX using HTML, CSS, JavaScript or frameworks of their choice.<br>
+          <strong>🎨 Logo Designing:</strong> Create a unique and brand-representative logo based on a given theme using design tools such as Illustrator, Figma, or Canva.
+        </p>
+
+        <p class="about__description">
+          Judging will be based on: originality, design aesthetics, responsiveness, typography, and user interaction.
+        </p>
+
+        <p class="about__description">
+          <strong>Open to:</strong> Students, freelancers, and entry-level designers. Teams of up to 2 members allowed.
+        </p>
+
+        <p class="about__description">
+          <strong>Registered Participants:</strong> <span class="participant-count" id="participant-count">0</span>
+        </p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSew1jSecKSqjQmpqB5giOpOjyOI-e2L_AXjxLGqUchlJ4BhRQ/viewform"
+           class="button">
+          Register Now <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Participant Counter Script -->
+  <script>
+    const participantCountElement = document.getElementById("participant-count");
+    let count = 27; // Example starting count, replace with dynamic value if needed
+
+    function animateCountUp(target, count) {
+      let current = 0;
+      const increment = Math.ceil(count / 50);
+      const interval = setInterval(() => {
+        current += increment;
+        if (current >= count) {
+          current = count;
+          clearInterval(interval);
+        }
+        target.textContent = current;
+      }, 40);
+    }
+
+    animateCountUp(participantCountElement, count);
+  </script>
+
+</body>
+</html>
