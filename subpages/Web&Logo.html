@@ -65,36 +65,31 @@
                   </div>
             </div>
             <div>
-
       </div>
       </div>
         <p class="about__description">
-          Dive into a world of creativity where design meets innovation! The <strong>Web & Logo Designing Competition</strong> invites all designers, developers, and visual artists to bring their bold ideas to life.
+          Unleash your imagination with our Web and Logo Designing modules—crafted for aspiring designers, developers, and creative thinkers. The Web Designing module focuses on user-centric layouts, responsive interfaces, and modern aesthetics using HTML, CSS, and JavaScript. Learn to create seamless, engaging web experiences across devices. The Logo Designing module hones your visual branding skills, exploring typography, color theory, and brand identity development. From concept to creation, bring bold, meaningful logos to life using industry tools. Whether you're a beginner or an experienced artist, this competition is your platform to innovate, express, and make a lasting visual impact.
         </p>
+            <!-- Typing Slogan -->
+      <p class="home__slogan" id="slogan"></p>
 
         <div class="web__container">
-                <article class="web__card">
-                    <!-- <div class="program__shape">
-                        <img src="../assets/img/fyplogo.png" alt="program image" class="program__img">
-                    </div> -->
+                <article class="program__card">
                     <h3 class="program__title">Web Designing</h3>
                     <p class="program__description">
                         Participants will create visually stunning and responsive websites with excellent UI/UX using HTML, CSS, JavaScript or frameworks of their choice.
                     </p>
-                    <a href="#" class="button button__flex pricing__button">
-                        Click here <i class="ri-arrow-right-line"></i>
+                    <a href="https://forms.gle/64z45Sb4bA3eWNdn6" class="button button__flex pricing__button">
+                        Register Now <i class="ri-arrow-right-line"></i>
                     </a>
                 </article>
-                <article class="web__card">
-                    <!-- <div class="program__shape">
-                        <img src="../assets/img/Web&Logo.png" alt="program image" class="program__img">
-                    </div> -->
+                <article class="program__card">
                     <h3 class="program__title">Logo Designing</h3>
                     <p class="program__description">
-                        Create a unique and brand-representative logo based on a given theme using design tools such as Illustrator, Figma, or Canva.                        
+                        Participants will create a unique and brand-representative logo based on a given theme using design tools such as Illustrator, Figma, or Canva.                        
                     </p>
-                    <a href="#" class="button button__flex pricing__button">
-                        Click here <i class="ri-arrow-right-line"></i>
+                    <a href="https://forms.gle/64z45Sb4bA3eWNdn6" class="button button__flex pricing__button">
+                        Register Now <i class="ri-arrow-right-line"></i>
                     </a>
                 </article>
             </div>
@@ -106,6 +101,24 @@
 
     <!--=============== EMAIL JS ===============-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>const sloganEl = document.getElementById('slogan');
+      const slogans = [
+      "No. of Participants Allowed: 01",
+      "Registration Fee: Rs: 1500/="
+    ];
+    let i = 0;
+
+  function typeNext() {
+    sloganEl.textContent = slogans[i];
+    i = (i + 1) % slogans.length;
+    setTimeout(() => {
+      sloganEl.style.animation = 'none';
+      sloganEl.offsetHeight; // force reflow
+      sloganEl.style.animation = '';
+      typeNext();
+    }, 2000); // wait before typing next slogan
+  } setTimeout(typeNext, 900);
+</script>
 
     <!--=============== MAIN JS ===============-->
     <script src="../assets/js/main.js"></script>
