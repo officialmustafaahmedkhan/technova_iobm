@@ -481,7 +481,26 @@ img {
 .fyp__container {
   display: grid;
   grid-template-columns: repeat(3,1fr) !important;
-  
+}
+.startup__card {
+  background-color: 9hsla(79, 6%, 64%, .07);
+  padding: 1.5rem 2rem;
+  border: 2px solid transparent;
+  transition: background .5s, border .4s;
+}
+.startup__container {
+  display: flex;
+  grid-template-columns: repeat(1,2fr) !important;
+}
+.mathsmania__card {
+  background-color: 9hsla(79, 6%, 64%, .07);
+  padding: 1.5rem 2rem;
+  border: 2px solid transparent;
+  transition: background .5s, border .4s;
+}
+.mathsmania__container {
+  display: flex;
+  grid-template-columns: repeat(1,2fr) !important;
 }
 .program__img {
   width: 38px;
