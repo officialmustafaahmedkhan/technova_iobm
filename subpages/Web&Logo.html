@@ -54,61 +54,60 @@
 
  <section class="section">
     <div class="container">
-      <h2 class="section__title-border">COMPETITION MODULE</h2>
       <div class="about__container">
-        <img src="assets/img/logo.jpg" alt="Design Image" class="about__img" />
+        <div class="section__data">
+                <div class="section__titles">
+                    <h1 class="section__title-border">COMPETITION</h1>
+                    <h1 class="section__title">MODULES</h1>
+                  </div>
+                  <div class="section__title">
+                    <h3>Web & Logo Designing Competition</h3>
+                  </div>
+            </div>
+            <div>
 
-        <h3 class="about__title">Web & Logo Designing Competition</h3>
-
+      </div>
+      </div>
         <p class="about__description">
           Dive into a world of creativity where design meets innovation! The <strong>Web & Logo Designing Competition</strong> invites all designers, developers, and visual artists to bring their bold ideas to life.
         </p>
 
-        <p class="about__description">
-          <strong>💻 Web Designing:</strong> Participants will create visually stunning and responsive websites with excellent UI/UX using HTML, CSS, JavaScript or frameworks of their choice.<br>
-          <strong>🎨 Logo Designing:</strong> Create a unique and brand-representative logo based on a given theme using design tools such as Illustrator, Figma, or Canva.
-        </p>
+        <div class="web__container">
+                <article class="web__card">
+                    <!-- <div class="program__shape">
+                        <img src="../assets/img/fyplogo.png" alt="program image" class="program__img">
+                    </div> -->
+                    <h3 class="program__title">Web Designing</h3>
+                    <p class="program__description">
+                        Participants will create visually stunning and responsive websites with excellent UI/UX using HTML, CSS, JavaScript or frameworks of their choice.
+                    </p>
+                    <a href="#" class="button button__flex pricing__button">
+                        Click here <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+                <article class="web__card">
+                    <!-- <div class="program__shape">
+                        <img src="../assets/img/Web&Logo.png" alt="program image" class="program__img">
+                    </div> -->
+                    <h3 class="program__title">Logo Designing</h3>
+                    <p class="program__description">
+                        Create a unique and brand-representative logo based on a given theme using design tools such as Illustrator, Figma, or Canva.                        
+                    </p>
+                    <a href="#" class="button button__flex pricing__button">
+                        Click here <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--=============== SCROLLREVEAL ===============-->
+    <!-- <script src="/assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <p class="about__description">
-          Judging will be based on: originality, design aesthetics, responsiveness, typography, and user interaction.
-        </p>
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-        <p class="about__description">
-          <strong>Open to:</strong> Students, freelancers, and entry-level designers. Teams of up to 2 members allowed.
-        </p>
-
-        <p class="about__description">
-          <strong>Registered Participants:</strong> <span class="participant-count" id="participant-count">0</span>
-        </p>
-
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSew1jSecKSqjQmpqB5giOpOjyOI-e2L_AXjxLGqUchlJ4BhRQ/viewform"
-           class="button">
-          Register Now <i class="ri-arrow-right-line"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Participant Counter Script -->
-  <script>
-    const participantCountElement = document.getElementById("participant-count");
-    let count = 27; // Example starting count, replace with dynamic value if needed
-
-    function animateCountUp(target, count) {
-      let current = 0;
-      const increment = Math.ceil(count / 50);
-      const interval = setInterval(() => {
-        current += increment;
-        if (current >= count) {
-          current = count;
-          clearInterval(interval);
-        }
-        target.textContent = current;
-      }, 40);
-    }
-
-    animateCountUp(participantCountElement, count);
-  </script>
-
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
