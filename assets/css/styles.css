@@ -289,12 +289,35 @@ img {
 }
 
 .nav__link {
-  color: var(--title-color);
-  transition: color .3s;
+  /* color: var(--title-color);
+  transition: color .3s; */
+   color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
 }
 
 .nav__link:hover {
-  color: #000000;
+  color: #ffbebe;
+  
+}
+
+.nav__link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav__link:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .nav__close {
@@ -319,7 +342,7 @@ img {
 
 /* Change background header */
 .bg-header {
-  background-color: #f5f5f596;
+  background-color: #3f3f3f96;
   box-shadow: 0 4px 8px hsla(180, 12%, 4%, .3);
   color: #730000;
 }
@@ -396,7 +419,7 @@ img {
   width: 350px;
   margin: 0 auto;
 }
-/*=============== BANK SLIDER ===============*/
+/*=============== BANK SLOD ===============*/
 
     .bank-slider-bottom {
       position: fixed;
@@ -491,7 +514,8 @@ img {
   background-color: 9hsla(79, 6%, 64%, .07);
   padding: 1.5rem 2rem;
   border: 2px solid transparent;
-  transition: background .5s, border .4s;
+  transition: 2s ease;
+
 }
 
 .web__card {
@@ -587,7 +611,8 @@ img {
 
 .program__card:hover {
   background-color: var(--first-color);
-  border: 2px solid var(--first-color-light);
+    box-shadow: 0px 0px 10px 0.5em #360000;
+
 }
 
 .program__card:hover .program__shape {
@@ -615,6 +640,7 @@ img {
   background-color: hsla(79, 6%, 64%, .07);
   padding: 1.5rem 2rem;
   border: 2px solid transparent;
+  margin-bottom: 1em;
   transition: background .5s, border .4s;
 }
 
@@ -670,7 +696,8 @@ img {
 
 .about__card:hover {
   background-color: var(--first-color);
-  border: 2px solid var(--first-color-light);
+  /* border: 2px solid var(--first-color-light); */
+  box-shadow: 0px 0px 10px 1px #4b0000;
 }
 
 .about__card:hover .about__shape {
